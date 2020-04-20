@@ -1,11 +1,21 @@
 import React from 'react';
+import * as Strap from 'reactstrap'
 
 const MovieCard = props => {
-  console.log(props)
+  const {movie} = props
+  console.log(movie)
   return(
-    <div>
+    <Strap.Card>
+      <Strap.CardTitle>
+        {movie.title}
+      </Strap.CardTitle>
+      <Strap.CardBody>
+        
+      </Strap.CardBody>
       
-    </div>)
+      
+    </Strap.Card>
+    )
 
 };
 
